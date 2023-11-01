@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redaction App</title>
+    <meta name="description" content="REDACTR - SCRAMBLE SOME WORDS FROM A BODY OF TEXT CONTENT">
+    <meta name="owner" content="https://github.com/mgregchi">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Redaction App</h1>
+    
+    <textarea id="inputText" placeholder="Enter your text..."></textarea>
+    
+    <input id="wordsToRedact" type="text" placeholder="Words to redact (separated by space)">
+    
+    <button id="redactButton">Redact Now</button>
+    
+    <select id="redactChar">
+        <option value="*">*</option>
+        <option value="?">?</option>
+        <option value="-">-</option>
+        <option value="_">_</option>
+        <option value="CUSTOM">Custom</option>
+    </select>
+    
+    <input id="customChar" type="text" placeholder="Custom character" style="display: none">
+    
+    <div id="outputText"></div>
+    
+    <div id="stats"></div>
+    
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
